@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Your Logo">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories</a>
+                    <ul class="dropdown-content">
+                        <li><a href="vapes.html">Vapes</a></li>
+                        <li><a href="concentrates.html">Concentrates</a></li>
+                        <li><a href="flower.html">Flower</a></li>
+                        <li><a href="edibles.html">Edibles</a></li>
+                        <li><a href="rolls.html">Pre-Rolls</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Send us a message</h2>
+            <form id="contactForm"
+  action="https://formspree.io/f/xleyopwj"
+  method="POST"
+>
+                  <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="contact-info">
+            <div class="email">
+                <i class="fa fa-envelope"></i> <a href="mailto:Stage4stoner@gmail.com">Stage4stoner@gmail.com</a>
+            </div>
+            <div class="phone">
+                <i class="fa fa-phone"></i> <a href="tel:6096618154">609-661-8154</a>
+            </div>
+        </div>
+    </footer>
+    <script src="contact.js"></script>
+</body>
+</html>

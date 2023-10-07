@@ -18,12 +18,11 @@ header {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Change to column layout for mobile */
     padding: 20px;
 }
 
 .contact-form, .map {
-    flex: 1;
     margin: 10px;
     padding: 20px;
     background-color: #fff;
@@ -33,6 +32,7 @@ header {
 
 h2 {
     color: #0077cc;
+    text-align: center;
 }
 
 form {
@@ -70,4 +70,35 @@ button:hover {
 
 .map {
     overflow: hidden;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .contact-form, .map {
+        margin: 5px; /* Reduce margin for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+        max-width: none; /* Remove max-width for smaller screens */
+    }
+
+    form {
+        max-width: 300px; /* Adjust the maximum width for the form */
+        margin: 0 auto; /* Center the form horizontally */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 95%;
+        padding: 8px; /* Reduce padding for text fields */
+        margin-bottom: 10px; /* Adjust margin for text fields */
+    }
+
+    button {
+        display: block; /* Make the button a block-level element */
+        margin: 0 auto; /* Center the button horizontally */
+    }
 }
